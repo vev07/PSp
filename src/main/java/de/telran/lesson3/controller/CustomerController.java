@@ -1,7 +1,8 @@
 package de.telran.lesson3.controller;
-
-import de.telran.lesson3.domain_layer.entity.common.CommonCustomer;
+//
+//import de.telran.lesson3.domain_layer.entity.common.CommonCustomer;
 import de.telran.lesson3.domain_layer.entity.Customer;
+import de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer;
 import de.telran.lesson3.service_layer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,20 +11,21 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/customer")
-public class CustomerController {
+public class CustomerController implements Controller {
     @Autowired
     private CustomerService customerService;
     @GetMapping
     public List<Customer> getAll() {
-        return customerService.getAll();
+        List<Customer> customers = customerService.getAll();
+        return customers;
     }
     @GetMapping("/{id}")
-    public Customer get_by_id(@PathVariable int id) {
+    public Customer getById(@PathVariable int id) {
         return customerService.getById(id);
     }
 
     @PostMapping
-    public void add(@RequestBody CommonCustomer customer) {
+    public void add(@RequestBody JpaCustomer customer) {
         customerService.add(customer);
     }
     @DeleteMapping("/{id}")

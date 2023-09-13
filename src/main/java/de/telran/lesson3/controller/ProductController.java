@@ -1,8 +1,15 @@
 package de.telran.lesson3.controller;
 
-import de.telran.lesson3.domain_layer.entity.common.CommonProduct;
+//import de.telran.lesson3.domain_layer.entity.common.CommonProduct;
 import de.telran.lesson3.domain_layer.entity.Product;
+import de.telran.lesson3.domain_layer.entity.jpa.JpaProduct;
+import de.telran.lesson3.exeption_layer.Response;
+import de.telran.lesson3.exeption_layer.exeptions.EntityValidationException;
+import de.telran.lesson3.exeption_layer.exeptions.FirstTestException;
+import de.telran.lesson3.exeption_layer.exeptions.SecondTestException;
+import de.telran.lesson3.exeption_layer.exeptions.ThirdTestException;
 import de.telran.lesson3.service_layer.ProductService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,12 +17,16 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/product")
-public class ProductController {
+public class ProductController implements Controller {
     @Autowired
     private ProductService productService;
     @GetMapping
     public List<Product> getAll() {
-        return productService.getAll();
+        List<Product> products = productService.getAll();
+        if (products.size() == 8)
+            throw new ThirdTestException("List products is empty ");
+        return products;
+
     }
 
     @GetMapping("/{id}")
@@ -24,8 +35,13 @@ public class ProductController {
     }
 
     @PostMapping
-    public void add(@RequestBody CommonProduct product) {
-        productService.add(product);
+    public void add(@Valid @RequestBody JpaProduct product) {
+        try {
+            productService.add(product);
+        } catch (Exception e) {
+            throw new EntityValidationException(e.getMessage());
+        }
+
 
     }
     @DeleteMapping("/{id}")
@@ -49,5 +65,7 @@ public class ProductController {
   public double getAveragePrice() {
       return productService.getAveragePrice();
   }
+
+
 
 }

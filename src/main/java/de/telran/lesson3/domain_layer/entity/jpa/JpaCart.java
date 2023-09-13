@@ -28,6 +28,9 @@ public class JpaCart implements Cart {
     )
     private List<JpaProduct> products;
 
+    public JpaCart() {
+    }
+
     @Override
     public List<Product> getProducts() {
         return new ArrayList<>(products);
@@ -41,5 +44,11 @@ public class JpaCart implements Cart {
     @Override
     public double getTotalPrice() {
         return products.stream().mapToDouble(x -> x.getPrice()).sum();
+    }
+    public void removeProduct(JpaProduct product) {
+        products.remove(product);
+    }
+    public void clear() {
+        products.clear();
     }
 }
