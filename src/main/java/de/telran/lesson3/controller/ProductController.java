@@ -23,7 +23,7 @@ public class ProductController implements Controller {
     @GetMapping
     public List<Product> getAll() {
         List<Product> products = productService.getAll();
-        if (products.size() == 8)
+        if (products.size() == 0)
             throw new ThirdTestException("List products is empty ");
         return products;
 
@@ -65,7 +65,5 @@ public class ProductController implements Controller {
   public double getAveragePrice() {
       return productService.getAveragePrice();
   }
-
-
 
 }

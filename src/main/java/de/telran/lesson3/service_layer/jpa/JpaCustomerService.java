@@ -9,15 +9,18 @@ import de.telran.lesson3.repository_layer.jpa.JpaCustomerRepository;
 import de.telran.lesson3.repository_layer.jpa.JpaProductRepository;
 import de.telran.lesson3.service_layer.CustomerService;
 import jakarta.transaction.Transactional;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Service
 public class JpaCustomerService implements CustomerService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(JpaCustomerService.class);
 
     @Autowired
     private JpaCustomerRepository jpaCustomerRepository;
@@ -31,6 +34,9 @@ public class JpaCustomerService implements CustomerService {
 
     @Override
     public Customer getById(int id) {
+        LOGGER.info(String.format("info customer requested with id - %d.", id));
+        LOGGER.warn(String.format("warn customer requested with id - %d.", id));
+        LOGGER.error(String.format("error customer requested with id - %d.", id));
         return jpaCustomerRepository.findById(id).orElse(null);
     }
 

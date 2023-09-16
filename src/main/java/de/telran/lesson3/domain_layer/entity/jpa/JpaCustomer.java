@@ -3,6 +3,8 @@ package de.telran.lesson3.domain_layer.entity.jpa;
 import de.telran.lesson3.domain_layer.entity.Cart;
 import de.telran.lesson3.domain_layer.entity.Customer;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.extern.java.Log;
 /*
@@ -24,9 +26,13 @@ public class JpaCustomer implements Customer {
     private int id;
 
     @Column(name = "name")
+    @Pattern(regexp = "[A-Z][a-z]{2,}")
     private String name;
+    @Pattern(regexp = "[A-Z][a-z]{2,}")
     @Column(name = "age")
+    @Min(value = 16)
     private int age;
+    @Pattern(regexp = "^[A-Za-z0-9+_.-]+@(.+)$")
     @Column(name = "email")
     private String email;
 

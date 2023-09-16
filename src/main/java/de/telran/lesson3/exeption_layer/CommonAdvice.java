@@ -1,6 +1,8 @@
-package de.telran.lesson3.exeption_layer.exeptions;
+package de.telran.lesson3.exeption_layer;
 
 import de.telran.lesson3.exeption_layer.Response;
+import de.telran.lesson3.exeption_layer.exeptions.EntityValidationException;
+import de.telran.lesson3.exeption_layer.exeptions.ThirdTestException;
 import jakarta.persistence.Column;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
