@@ -3,6 +3,9 @@ package de.telran.lesson3.domain_layer.entity.jpa;
 import de.telran.lesson3.domain_layer.entity.Cart;
 import de.telran.lesson3.domain_layer.entity.Product;
 import jakarta.persistence.*;
+import lombok.extern.log4j.Log4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +13,8 @@ import java.util.List;
 @Entity
 @Table(name = "cart")
 public class JpaCart implements Cart {
+
+    private static final Logger logger = LoggerFactory.getLogger(JpaCart.class);
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,10 +34,12 @@ public class JpaCart implements Cart {
     private List<JpaProduct> products;
 
     public JpaCart() {
+        logger.info("You created JpaCart");
     }
 
     @Override
     public List<Product> getProducts() {
+
         return new ArrayList<>(products);
     }
 

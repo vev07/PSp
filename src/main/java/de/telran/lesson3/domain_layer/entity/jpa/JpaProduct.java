@@ -3,10 +3,13 @@ package de.telran.lesson3.domain_layer.entity.jpa;
 import de.telran.lesson3.domain_layer.entity.Product;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Entity
 @Table(name = "product")
 public class JpaProduct implements Product {
+    private static final Logger LOGGER = LoggerFactory.getLogger(JpaProduct.class);
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,6 +37,7 @@ public class JpaProduct implements Product {
         this.id = id;
         this.name = name;
         this.price = price;
+        LOGGER.info("You created product");
     }
 
     @Override
@@ -56,6 +60,7 @@ public class JpaProduct implements Product {
     public void setName(String name) {
         this.name = name;
     }
+
 
 
     @Override

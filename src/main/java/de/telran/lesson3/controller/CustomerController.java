@@ -22,8 +22,8 @@ public class CustomerController implements Controller {
     @GetMapping
     public List<Customer> getAll() {
         List<Customer> customers = customerService.getAll();
-        if (customers.size() < 10)
-            throw new ExceptionIAmTeapot("List customers is lower then 10 customers");
+        if (customers.size() == 0)
+            throw new ExceptionIAmTeapot("List customers is lower then 0 customers");
         return customers;
     }
     @GetMapping("/{id}")

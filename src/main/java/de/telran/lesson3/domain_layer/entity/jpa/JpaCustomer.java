@@ -7,18 +7,15 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.Pattern;
 import lombok.Getter;
 import lombok.extern.java.Log;
-/*
-1. Добавить покупателю два дополнительных поля - возраст и емейл (и в БД тоже).
-2. Провалидировать все поля покупателя.
-3. Подумать, какие нештатные ситуации могут возникать при работе обоих сервисов,
-   создать для них соответствующие эксепшены.
-4. Выбросить эти эксепшены в нужных местах, поймать в контроллерах и обработать при помощи адвайса.
- */
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @Entity
 @Table(name = "customer")
 @Getter
 public class JpaCustomer implements Customer {
+    private static final Logger logger = LoggerFactory.getLogger(JpaCustomer.class);
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,10 +25,11 @@ public class JpaCustomer implements Customer {
     @Column(name = "name")
     @Pattern(regexp = "[A-Z][a-z]{2,}")
     private String name;
-    @Pattern(regexp = "[A-Z][a-z]{2,}")
+
     @Column(name = "age")
     @Min(value = 16)
     private int age;
+
     @Pattern(regexp = "^[A-Za-z0-9+_.-]+@(.+)$")
     @Column(name = "email")
     private String email;
@@ -48,6 +46,7 @@ public class JpaCustomer implements Customer {
         this.age = age;
         this.email = email;
         this.cart = cart;
+        logger.info("Customer was created! Are you happy  ;-)");
     }
 
     @Override
@@ -69,8 +68,20 @@ public class JpaCustomer implements Customer {
     }
 
 
+
     @Override
     public Cart getCart() {
         return cart;
+    }
+
+    @Override
+    public String toString() {
+        return "JpaCustomer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", email='" + email + '\'' +
+                ", cart=" + cart +
+                '}';
     }
 }

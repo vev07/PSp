@@ -22,8 +22,9 @@ public class ProductController implements Controller {
     private ProductService productService;
     @GetMapping
     public List<Product> getAll() {
+      //  test(new JpaProduct(0,"Test name",100));
         List<Product> products = productService.getAll();
-        if (products.size() == 0)
+        if (products.size() < 10)
             throw new ThirdTestException("List products is empty ");
         return products;
 
@@ -65,5 +66,7 @@ public class ProductController implements Controller {
   public double getAveragePrice() {
       return productService.getAveragePrice();
   }
-
+    public void test(JpaProduct product) {
+        product.setName("New name");
+    }
 }

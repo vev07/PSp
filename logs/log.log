@@ -1,82 +1,657 @@
-2023-09-16T01:35:10.967+02:00  INFO 4944 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 4944 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:35:10.972+02:00  INFO 4944 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:35:11.660+02:00  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:35:11.723+02:00  INFO 4944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:35:12.254+02:00  INFO 4944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:35:12.263+02:00  INFO 4944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:35:12.263+02:00  INFO 4944 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:35:12.340+02:00  INFO 4944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:35:12.340+02:00  INFO 4944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1328 ms
-2023-09-16T01:35:12.508+02:00  INFO 4944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:35:12.565+02:00  INFO 4944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:35:12.569+02:00  INFO 4944 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:35:12.761+02:00  INFO 4944 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:35:12.896+02:00  INFO 4944 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:35:12.913+02:00  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:35:13.218+02:00  INFO 4944 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261275ae
-2023-09-16T01:35:13.220+02:00  INFO 4944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:35:13.555+02:00  INFO 4944 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:35:14.235+02:00  INFO 4944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:35:14.237+02:00  INFO 4944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:35:14.529+02:00  INFO 4944 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:35:14.645+02:00  WARN 4944 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:35:14.967+02:00  INFO 4944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-16T01:35:14.973+02:00  INFO 4944 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.38 seconds (process running for 5.324)
-2023-09-16T01:35:46.352+02:00  INFO 4944 --- [http-nio-8080-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-16T01:35:46.353+02:00  INFO 4944 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-16T01:35:46.354+02:00  INFO 4944 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-16T01:35:55.703+02:00  INFO 4944 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 6.
-2023-09-16T01:35:55.703+02:00  WARN 4944 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 6.
-2023-09-16T01:35:55.703+02:00 ERROR 4944 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 6.
-2023-09-16T01:36:17.961+02:00  INFO 4944 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:36:17.964+02:00  INFO 4944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:36:17.971+02:00  INFO 4944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T01:47:39.244+02:00  INFO 14696 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 14696 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:47:39.246+02:00  INFO 14696 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:47:39.840+02:00  INFO 14696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:47:39.903+02:00  INFO 14696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:47:40.428+02:00  INFO 14696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:47:40.437+02:00  INFO 14696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:47:40.437+02:00  INFO 14696 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:47:40.511+02:00  INFO 14696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:47:40.512+02:00  INFO 14696 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1201 ms
-2023-09-16T01:47:40.657+02:00  INFO 14696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:47:40.705+02:00  INFO 14696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:47:40.707+02:00  INFO 14696 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:47:40.833+02:00  INFO 14696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:47:40.949+02:00  INFO 14696 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:47:40.963+02:00  INFO 14696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:47:41.228+02:00  INFO 14696 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261275ae
-2023-09-16T01:47:41.231+02:00  INFO 14696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:47:41.516+02:00  INFO 14696 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:47:42.223+02:00  INFO 14696 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:47:42.226+02:00  INFO 14696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:47:42.523+02:00  INFO 14696 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:47:42.642+02:00  WARN 14696 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:47:42.878+02:00  WARN 14696 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-2023-09-16T01:47:42.879+02:00  INFO 14696 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:47:42.880+02:00  INFO 14696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:47:42.887+02:00  INFO 14696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T01:47:42.888+02:00  INFO 14696 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-16T01:47:42.900+02:00  INFO 14696 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+2023-09-20T00:00:15.994+02:00  INFO 8824 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 8824 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:00:16.002+02:00  INFO 8824 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:00:16.618+02:00  INFO 8824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:00:16.677+02:00  INFO 8824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:00:17.218+02:00  INFO 8824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:00:17.226+02:00  INFO 8824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:00:17.226+02:00  INFO 8824 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:00:17.296+02:00  INFO 8824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:00:17.298+02:00  INFO 8824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2023-09-20T00:00:17.432+02:00  INFO 8824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:00:17.479+02:00  INFO 8824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:00:17.481+02:00  INFO 8824 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:00:17.600+02:00  INFO 8824 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:00:17.722+02:00  INFO 8824 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:00:17.737+02:00  INFO 8824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:00:17.997+02:00  INFO 8824 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47be41c6
+2023-09-20T00:00:17.999+02:00  INFO 8824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:00:18.266+02:00  INFO 8824 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:00:18.748+02:00  INFO 8824 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:00:18.911+02:00  INFO 8824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:00:18.915+02:00  INFO 8824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:00:19.210+02:00  INFO 8824 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:00:19.357+02:00  WARN 8824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:00:19.720+02:00  INFO 8824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:00:19.729+02:00  INFO 8824 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.137 seconds (process running for 4.742)
+2023-09-20T00:00:31.983+02:00  INFO 8824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:00:31.984+02:00  INFO 8824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:00:31.985+02:00  INFO 8824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-09-20T00:00:32.018+02:00  INFO 8824 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:00:32.019+02:00  INFO 8824 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : info product requested with id - 2.
+2023-09-20T00:00:32.019+02:00  WARN 8824 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 2.
+2023-09-20T00:00:32.019+02:00 ERROR 8824 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : error product requested with id - 2.
+2023-09-20T00:00:32.087+02:00  INFO 8824 --- [http-nio-8080-exec-1] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 2
+2023-09-20T00:00:32.089+02:00  INFO 8824 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending - JpaProduct{id=2, name='Apple', price=120.0}
+2023-09-20T00:01:32.784+02:00  INFO 8824 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:01:32.786+02:00  INFO 8824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:01:32.792+02:00  INFO 8824 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:01:39.758+02:00  INFO 10916 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 10916 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:01:39.761+02:00  INFO 10916 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:01:40.336+02:00  INFO 10916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:01:40.394+02:00  INFO 10916 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:01:40.969+02:00  INFO 10916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:01:40.978+02:00  INFO 10916 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:01:40.978+02:00  INFO 10916 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:01:41.052+02:00  INFO 10916 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:01:41.053+02:00  INFO 10916 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1232 ms
+2023-09-20T00:01:41.191+02:00  INFO 10916 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:01:41.241+02:00  INFO 10916 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:01:41.243+02:00  INFO 10916 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:01:41.375+02:00  INFO 10916 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:01:41.507+02:00  INFO 10916 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:01:41.523+02:00  INFO 10916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:01:41.794+02:00  INFO 10916 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45707f76
+2023-09-20T00:01:41.796+02:00  INFO 10916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:01:42.093+02:00  INFO 10916 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:01:42.612+02:00  INFO 10916 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:01:42.771+02:00  INFO 10916 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:01:42.774+02:00  INFO 10916 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:01:43.070+02:00  INFO 10916 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:01:43.222+02:00  WARN 10916 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:01:43.600+02:00  INFO 10916 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:01:43.610+02:00  INFO 10916 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.31 seconds (process running for 4.894)
+2023-09-20T00:01:46.294+02:00  INFO 10916 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:01:46.294+02:00  INFO 10916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:01:46.296+02:00  INFO 10916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-20T00:01:46.329+02:00  INFO 10916 --- [http-nio-8080-exec-6] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:01:46.330+02:00  INFO 10916 --- [http-nio-8080-exec-6] d.t.l.s.jpa.JpaProductService            : info product requested with id - 2.
+2023-09-20T00:01:46.330+02:00  WARN 10916 --- [http-nio-8080-exec-6] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 2.
+2023-09-20T00:01:46.331+02:00 ERROR 10916 --- [http-nio-8080-exec-6] d.t.l.s.jpa.JpaProductService            : error product requested with id - 2.
+2023-09-20T00:01:46.397+02:00  INFO 10916 --- [http-nio-8080-exec-6] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 2
+2023-09-20T00:01:46.400+02:00  INFO 10916 --- [http-nio-8080-exec-6] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int) with result JpaProduct{id=2, name='Apple', price=120.0}
+2023-09-20T00:02:04.477+02:00  INFO 10916 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:02:04.542+02:00  INFO 10916 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll() with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:02:04.544+02:00 ERROR 10916 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+	at de.telran.lesson3.controller.ProductController.getAll(ProductController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at de.telran.lesson3.controller.ProductController$$SpringCGLIB$$0.getAll(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-09-20T00:02:18.338+02:00  INFO 10916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:02:18.340+02:00  INFO 10916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:02:18.348+02:00  INFO 10916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:02:52.276+02:00  INFO 11380 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 11380 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:02:52.279+02:00  INFO 11380 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:02:52.828+02:00  INFO 11380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:02:52.886+02:00  INFO 11380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:02:53.423+02:00  INFO 11380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:02:53.431+02:00  INFO 11380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:02:53.431+02:00  INFO 11380 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:02:53.503+02:00  INFO 11380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:02:53.503+02:00  INFO 11380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1181 ms
+2023-09-20T00:02:53.635+02:00  INFO 11380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:02:53.683+02:00  INFO 11380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:02:53.685+02:00  INFO 11380 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:02:53.799+02:00  INFO 11380 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:02:53.914+02:00  INFO 11380 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:02:53.928+02:00  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:02:54.183+02:00  INFO 11380 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45707f76
+2023-09-20T00:02:54.185+02:00  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:02:54.477+02:00  INFO 11380 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:02:54.984+02:00  INFO 11380 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:02:55.136+02:00  INFO 11380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:02:55.140+02:00  INFO 11380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:02:55.434+02:00  INFO 11380 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:02:55.580+02:00  WARN 11380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:02:55.974+02:00  INFO 11380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:02:55.983+02:00  INFO 11380 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.076 seconds (process running for 4.577)
+2023-09-20T00:03:03.579+02:00  INFO 11380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:03:03.580+02:00  INFO 11380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:03:03.581+02:00  INFO 11380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:03:03.608+02:00  INFO 11380 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:03:03.720+02:00  INFO 11380 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:03:03.727+02:00 ERROR 11380 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+	at de.telran.lesson3.controller.ProductController.getAll(ProductController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at de.telran.lesson3.controller.ProductController$$SpringCGLIB$$0.getAll(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-09-20T00:03:08.859+02:00  INFO 11380 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:03:08.860+02:00  INFO 11380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:03:08.867+02:00  INFO 11380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:03:40.586+02:00  INFO 13144 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 13144 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:03:40.589+02:00  INFO 13144 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:03:41.185+02:00  INFO 13144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:03:41.255+02:00  INFO 13144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:03:41.803+02:00  INFO 13144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:03:41.811+02:00  INFO 13144 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:03:41.811+02:00  INFO 13144 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:03:41.882+02:00  INFO 13144 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:03:41.882+02:00  INFO 13144 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1228 ms
+2023-09-20T00:03:42.024+02:00  INFO 13144 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:03:42.067+02:00  INFO 13144 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:03:42.069+02:00  INFO 13144 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:03:42.186+02:00  INFO 13144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:03:42.301+02:00  INFO 13144 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:03:42.315+02:00  INFO 13144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:03:42.570+02:00  INFO 13144 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5efe5b25
+2023-09-20T00:03:42.572+02:00  INFO 13144 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:03:42.835+02:00  INFO 13144 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:03:43.321+02:00  INFO 13144 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:03:43.475+02:00  INFO 13144 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:03:43.478+02:00  INFO 13144 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:03:43.783+02:00  INFO 13144 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:03:43.927+02:00  WARN 13144 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:03:44.307+02:00  INFO 13144 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:03:44.316+02:00  INFO 13144 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.118 seconds (process running for 4.623)
+2023-09-20T00:03:46.785+02:00  INFO 13144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:03:46.785+02:00  INFO 13144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:03:46.786+02:00  INFO 13144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:03:46.811+02:00  INFO 13144 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:03:57.261+02:00  INFO 13144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:03:57.263+02:00  INFO 13144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:03:57.269+02:00  INFO 13144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:06:04.340+02:00  INFO 8776 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 8776 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:06:04.342+02:00  INFO 8776 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:06:04.907+02:00  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:06:04.970+02:00  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:06:05.503+02:00  INFO 8776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:06:05.511+02:00  INFO 8776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:06:05.512+02:00  INFO 8776 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:06:05.581+02:00  INFO 8776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:06:05.581+02:00  INFO 8776 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
+2023-09-20T00:06:05.713+02:00  INFO 8776 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:06:05.758+02:00  INFO 8776 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:06:05.760+02:00  INFO 8776 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:06:05.874+02:00  INFO 8776 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:06:05.986+02:00  INFO 8776 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:06:06.000+02:00  INFO 8776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:06:06.252+02:00  INFO 8776 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45707f76
+2023-09-20T00:06:06.254+02:00  INFO 8776 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:06:06.552+02:00  INFO 8776 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:06:07.069+02:00  INFO 8776 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:06:07.223+02:00  INFO 8776 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:06:07.227+02:00  INFO 8776 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:06:07.520+02:00  INFO 8776 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:06:07.670+02:00  WARN 8776 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:06:08.059+02:00  INFO 8776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:06:08.069+02:00  INFO 8776 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.102 seconds (process running for 4.644)
+2023-09-20T00:06:11.402+02:00  INFO 8776 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:06:11.402+02:00  INFO 8776 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:06:11.403+02:00  INFO 8776 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:06:11.428+02:00  INFO 8776 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:06:11.540+02:00  INFO 8776 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:06:11.543+02:00 ERROR 8776 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+	at de.telran.lesson3.controller.ProductController.getAll(ProductController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at de.telran.lesson3.controller.ProductController$$SpringCGLIB$$0.getAll(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-09-20T00:10:17.226+02:00  INFO 8776 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:10:17.227+02:00  INFO 8776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:10:17.233+02:00  INFO 8776 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:10:25.072+02:00  INFO 4792 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 4792 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:10:25.074+02:00  INFO 4792 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:10:25.618+02:00  INFO 4792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:10:25.676+02:00  INFO 4792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:10:26.194+02:00  INFO 4792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:10:26.203+02:00  INFO 4792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:10:26.203+02:00  INFO 4792 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:10:26.272+02:00  INFO 4792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:10:26.272+02:00  INFO 4792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1158 ms
+2023-09-20T00:10:26.402+02:00  INFO 4792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:10:26.448+02:00  INFO 4792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:10:26.450+02:00  INFO 4792 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:10:26.563+02:00  INFO 4792 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:10:26.675+02:00  INFO 4792 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:10:26.690+02:00  INFO 4792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:10:26.946+02:00  INFO 4792 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f0e2bdc
+2023-09-20T00:10:26.947+02:00  INFO 4792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:10:27.217+02:00  INFO 4792 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:10:27.729+02:00  INFO 4792 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:10:27.887+02:00  INFO 4792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:10:27.890+02:00  INFO 4792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:10:28.205+02:00  INFO 4792 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:10:28.354+02:00  WARN 4792 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:10:28.714+02:00  INFO 4792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:10:28.723+02:00  INFO 4792 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.009 seconds (process running for 4.519)
+2023-09-20T00:10:32.049+02:00  INFO 4792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:10:32.049+02:00  INFO 4792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:10:32.050+02:00  INFO 4792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:10:32.073+02:00  INFO 4792 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:10:32.179+02:00  INFO 4792 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:10:32.182+02:00 ERROR 4792 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+	at de.telran.lesson3.controller.ProductController.getAll(ProductController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at de.telran.lesson3.controller.ProductController$$SpringCGLIB$$0.getAll(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-09-20T00:10:34.400+02:00  INFO 4792 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:10:34.402+02:00  INFO 4792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:10:34.408+02:00  INFO 4792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:10:47.310+02:00  INFO 2524 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 2524 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:10:47.312+02:00  INFO 2524 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:10:47.921+02:00  INFO 2524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:10:47.985+02:00  INFO 2524 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:10:48.511+02:00  INFO 2524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:10:48.518+02:00  INFO 2524 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:10:48.518+02:00  INFO 2524 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:10:48.587+02:00  INFO 2524 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:10:48.587+02:00  INFO 2524 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
+2023-09-20T00:10:48.725+02:00  INFO 2524 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:10:48.768+02:00  INFO 2524 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:10:48.770+02:00  INFO 2524 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:10:48.892+02:00  INFO 2524 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:10:49.005+02:00  INFO 2524 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:10:49.019+02:00  INFO 2524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:10:49.275+02:00  INFO 2524 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5efe5b25
+2023-09-20T00:10:49.277+02:00  INFO 2524 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:10:49.544+02:00  INFO 2524 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:10:50.019+02:00  INFO 2524 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:10:50.167+02:00  INFO 2524 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:10:50.170+02:00  INFO 2524 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:10:50.466+02:00  INFO 2524 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:10:50.613+02:00  WARN 2524 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:10:50.972+02:00  INFO 2524 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:10:50.981+02:00  INFO 2524 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.104 seconds (process running for 4.698)
+2023-09-20T00:10:54.214+02:00  INFO 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:10:54.214+02:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:10:54.215+02:00  INFO 2524 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-09-20T00:10:54.351+02:00  INFO 2524 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:10:54.354+02:00 ERROR 2524 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "products" is null
+	at de.telran.lesson3.controller.ProductController.getAll(ProductController.java:27) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:756) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708) ~[spring-aop-6.0.11.jar:6.0.11]
+	at de.telran.lesson3.controller.ProductController$$SpringCGLIB$$0.getAll(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
+	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
+
+2023-09-20T00:11:15.187+02:00  INFO 2524 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:11:15.189+02:00  INFO 2524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:11:15.196+02:00  INFO 2524 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:16:03.059+02:00  INFO 8996 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 8996 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:16:03.062+02:00  INFO 8996 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:16:03.910+02:00  INFO 8996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:16:04.004+02:00  INFO 8996 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:16:04.797+02:00  INFO 8996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:16:04.808+02:00  INFO 8996 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:16:04.808+02:00  INFO 8996 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:16:04.909+02:00  INFO 8996 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:16:04.910+02:00  INFO 8996 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1778 ms
+2023-09-20T00:16:05.105+02:00  INFO 8996 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:16:05.177+02:00  INFO 8996 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:16:05.180+02:00  INFO 8996 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:16:05.356+02:00  INFO 8996 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:16:05.522+02:00  INFO 8996 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:16:05.541+02:00  INFO 8996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:16:05.923+02:00  INFO 8996 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60c98f25
+2023-09-20T00:16:05.926+02:00  INFO 8996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:16:06.338+02:00  INFO 8996 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:16:07.063+02:00  INFO 8996 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:16:07.312+02:00  INFO 8996 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:16:07.317+02:00  INFO 8996 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:16:07.783+02:00  INFO 8996 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:16:07.996+02:00  WARN 8996 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:16:08.470+02:00  INFO 8996 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:16:08.481+02:00  INFO 8996 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.967 seconds (process running for 6.784)
+2023-09-20T00:16:18.408+02:00  INFO 8996 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:16:18.410+02:00  INFO 8996 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:16:18.411+02:00  INFO 8996 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:16:18.449+02:00  INFO 8996 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:16:18.619+02:00  INFO 8996 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:16:37.736+02:00  INFO 8996 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:16:37.739+02:00  INFO 8996 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaProductService            : info product requested with id - 1.
+2023-09-20T00:16:37.740+02:00  WARN 8996 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 1.
+2023-09-20T00:16:37.740+02:00 ERROR 8996 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaProductService            : error product requested with id - 1.
+2023-09-20T00:16:37.756+02:00  INFO 8996 --- [http-nio-8080-exec-3] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 1
+2023-09-20T00:16:37.756+02:00  INFO 8996 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was ending with result JpaProduct{id=1, name='Banana', price=150.0}
+2023-09-20T00:17:02.335+02:00  INFO 8996 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:17:02.337+02:00  INFO 8996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:17:02.347+02:00  INFO 8996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:17:58.917+02:00  INFO 3328 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 3328 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:17:58.919+02:00  INFO 3328 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:17:59.759+02:00  INFO 3328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:17:59.851+02:00  INFO 3328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:18:00.676+02:00  INFO 3328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:18:00.686+02:00  INFO 3328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:18:00.686+02:00  INFO 3328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:18:00.796+02:00  INFO 3328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:18:00.798+02:00  INFO 3328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1810 ms
+2023-09-20T00:18:00.992+02:00  INFO 3328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:18:01.063+02:00  INFO 3328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:18:01.066+02:00  INFO 3328 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:18:01.244+02:00  INFO 3328 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:18:01.417+02:00  INFO 3328 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:18:01.437+02:00  INFO 3328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:18:01.831+02:00  INFO 3328 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1282f784
+2023-09-20T00:18:01.833+02:00  INFO 3328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:18:02.238+02:00  INFO 3328 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:18:02.964+02:00  INFO 3328 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:18:03.181+02:00  INFO 3328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:18:03.185+02:00  INFO 3328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:18:03.574+02:00  INFO 3328 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:18:03.749+02:00  WARN 3328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:18:04.146+02:00  INFO 3328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:18:04.156+02:00  INFO 3328 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.783 seconds (process running for 6.62)
+2023-09-20T00:18:07.788+02:00  INFO 3328 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:18:07.789+02:00  INFO 3328 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:18:07.790+02:00  INFO 3328 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:18:07.836+02:00  INFO 3328 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:18:07.837+02:00  INFO 3328 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : info product requested with id - 1.
+2023-09-20T00:18:07.838+02:00  WARN 3328 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 1.
+2023-09-20T00:18:07.838+02:00 ERROR 3328 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : error product requested with id - 1.
+2023-09-20T00:18:07.931+02:00  INFO 3328 --- [http-nio-8080-exec-2] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 1
+2023-09-20T00:18:07.935+02:00  INFO 3328 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int) from class JpaProductService was ending with result JpaProduct{id=1, name='Banana', price=150.0}
+2023-09-20T00:18:24.349+02:00  INFO 3328 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:18:24.352+02:00  INFO 3328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:18:24.368+02:00  INFO 3328 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:20:39.606+02:00  INFO 14600 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 14600 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:20:39.608+02:00  INFO 14600 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:20:40.401+02:00  INFO 14600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:20:40.486+02:00  INFO 14600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:20:40.901+02:00  WARN 14600 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed
+2023-09-20T00:20:40.913+02:00  INFO 14600 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-09-16T01:47:42.916+02:00 ERROR 14696 --- [main] o.s.boot.SpringApplication               : Application run failed
+2023-09-20T00:20:40.934+02:00 ERROR 14600 --- [main] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:273) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:788) ~[spring-context-6.0.11.jar:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:592) ~[spring-context-6.0.11.jar:6.0.11]
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
@@ -84,57 +659,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
 	at de.telran.lesson3.Lesson3Application.main(Lesson3Application.java:10) ~[classes/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
-	... 19 common frames omitted
-Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:276) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:243) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1063) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1005) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
-	... 20 common frames omitted
-
-2023-09-16T01:48:17.974+02:00  INFO 11724 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 11724 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:48:17.976+02:00  INFO 11724 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:48:18.536+02:00  INFO 11724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:48:18.594+02:00  INFO 11724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:48:19.100+02:00  INFO 11724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:48:19.109+02:00  INFO 11724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:48:19.109+02:00  INFO 11724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:48:19.182+02:00  INFO 11724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:48:19.183+02:00  INFO 11724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1164 ms
-2023-09-16T01:48:19.316+02:00  INFO 11724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:48:19.360+02:00  INFO 11724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:48:19.361+02:00  INFO 11724 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:48:19.480+02:00  INFO 11724 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:48:19.594+02:00  INFO 11724 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:48:19.612+02:00  INFO 11724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:48:19.870+02:00  INFO 11724 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ce7394f
-2023-09-16T01:48:19.872+02:00  INFO 11724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:48:20.140+02:00  INFO 11724 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:48:20.772+02:00  INFO 11724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:48:20.775+02:00  INFO 11724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:48:21.067+02:00  INFO 11724 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:48:21.185+02:00  WARN 11724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:48:21.389+02:00  WARN 11724 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-2023-09-16T01:48:21.390+02:00  INFO 11724 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:48:21.391+02:00  INFO 11724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:48:21.397+02:00  INFO 11724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T01:48:21.398+02:00  INFO 11724 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-16T01:48:21.408+02:00  INFO 11724 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-09-16T01:48:21.425+02:00 ERROR 11724 --- [main] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'handlerExceptionResolver' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:659) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:647) ~[spring-beans-6.0.11.jar:6.0.11]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': warning no match for this type name: de.telran.lesson3.service_layer.jpa [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:605) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:417) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560) ~[spring-beans-6.0.11.jar:6.0.11]
@@ -142,162 +674,196 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar:6.0.11]
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar:6.0.11]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar:6.0.11]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.3.jar:3.1.3]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.3.jar:3.1.3]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.3.jar:3.1.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.3.jar:3.1.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.3.jar:3.1.3]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.3.jar:3.1.3]
-	at de.telran.lesson3.Lesson3Application.main(Lesson3Application.java:10) ~[classes/:na]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.HandlerExceptionResolver]: Factory method 'handlerExceptionResolver' threw exception with message: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.11.jar:6.0.11]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.0.11.jar:6.0.11]
-	... 19 common frames omitted
-Caused by: java.lang.IllegalStateException: Ambiguous @ExceptionHandler method mapped for [class de.telran.lesson3.exeption_layer.customerException.MyException]: {public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleCustomerNotFoundException(de.telran.lesson3.exeption_layer.customerException.MyException), public org.springframework.http.ResponseEntity de.telran.lesson3.exeption_layer.customerException.CustomerExceptionHandler.handleListCustomersIsEmptyException(de.telran.lesson3.exeption_layer.customerException.MyException)}
-	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.addExceptionMapping(ExceptionHandlerMethodResolver.java:114) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.method.annotation.ExceptionHandlerMethodResolver.<init>(ExceptionHandlerMethodResolver.java:78) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.initExceptionHandlerAdviceCache(ExceptionHandlerExceptionResolver.java:276) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.afterPropertiesSet(ExceptionHandlerExceptionResolver.java:243) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.addDefaultHandlerExceptionResolvers(WebMvcConfigurationSupport.java:1063) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.handlerExceptionResolver(WebMvcConfigurationSupport.java:1005) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.11.jar:6.0.11]
-	... 20 common frames omitted
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:280) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1102) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:509) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: de.telran.lesson3.service_layer.jpa [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.20.jar:na]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:222) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:193) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:172) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:288) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:320) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:366) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:318) ~[spring-aop-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:434) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773) ~[spring-beans-6.0.11.jar:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.11.jar:6.0.11]
+	... 36 common frames omitted
 
-2023-09-16T01:57:13.726+02:00  INFO 11896 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 11896 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:57:13.728+02:00  INFO 11896 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:57:14.394+02:00  INFO 11896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:57:14.450+02:00  INFO 11896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:57:14.969+02:00  INFO 11896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:57:14.976+02:00  INFO 11896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:57:14.976+02:00  INFO 11896 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:57:15.046+02:00  INFO 11896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:57:15.047+02:00  INFO 11896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms
-2023-09-16T01:57:15.172+02:00  INFO 11896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:57:15.214+02:00  INFO 11896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:57:15.216+02:00  INFO 11896 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:57:15.336+02:00  INFO 11896 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:57:15.446+02:00  INFO 11896 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:57:15.460+02:00  INFO 11896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:57:15.719+02:00  INFO 11896 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25b74370
-2023-09-16T01:57:15.720+02:00  INFO 11896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:57:15.997+02:00  INFO 11896 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:57:16.648+02:00  INFO 11896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:57:16.651+02:00  INFO 11896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:57:16.938+02:00  INFO 11896 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:57:17.057+02:00  WARN 11896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:57:17.396+02:00  INFO 11896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-16T01:57:17.403+02:00  INFO 11896 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.083 seconds (process running for 4.644)
-2023-09-16T01:57:31.667+02:00  INFO 11896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-16T01:57:31.667+02:00  INFO 11896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-16T01:57:31.668+02:00  INFO 11896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-16T01:57:31.698+02:00  INFO 11896 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 6.
-2023-09-16T01:57:31.698+02:00  WARN 11896 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 6.
-2023-09-16T01:57:31.699+02:00 ERROR 11896 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 6.
-2023-09-16T01:57:36.961+02:00  INFO 11896 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 5.
-2023-09-16T01:57:36.963+02:00  WARN 11896 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 5.
-2023-09-16T01:57:36.963+02:00 ERROR 11896 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 5.
-2023-09-16T01:57:43.585+02:00  INFO 11896 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:57:43.587+02:00  INFO 11896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:57:43.594+02:00  INFO 11896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T01:57:58.880+02:00  INFO 5356 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 5356 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:57:58.883+02:00  INFO 5356 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:57:59.465+02:00  INFO 5356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:57:59.521+02:00  INFO 5356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:58:00.060+02:00  INFO 5356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:58:00.068+02:00  INFO 5356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:58:00.068+02:00  INFO 5356 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:58:00.141+02:00  INFO 5356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:58:00.141+02:00  INFO 5356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
-2023-09-16T01:58:00.271+02:00  INFO 5356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:58:00.315+02:00  INFO 5356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:58:00.316+02:00  INFO 5356 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:58:00.437+02:00  INFO 5356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:58:00.555+02:00  INFO 5356 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:58:00.569+02:00  INFO 5356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:58:00.826+02:00  INFO 5356 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25b74370
-2023-09-16T01:58:00.828+02:00  INFO 5356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:58:01.091+02:00  INFO 5356 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:58:01.713+02:00  INFO 5356 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:58:01.716+02:00  INFO 5356 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:58:02.003+02:00  INFO 5356 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:58:02.114+02:00  WARN 5356 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:58:02.433+02:00  INFO 5356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-16T01:58:02.440+02:00  INFO 5356 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 3.978 seconds (process running for 4.496)
-2023-09-16T01:58:07.368+02:00  INFO 5356 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-16T01:58:07.368+02:00  INFO 5356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-16T01:58:07.370+02:00  INFO 5356 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-16T01:58:42.812+02:00  INFO 5356 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:58:42.814+02:00  INFO 5356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:58:42.820+02:00  INFO 5356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T01:58:56.507+02:00  INFO 6892 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 6892 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T01:58:56.509+02:00  INFO 6892 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T01:58:57.070+02:00  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T01:58:57.131+02:00  INFO 6892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
-2023-09-16T01:58:57.666+02:00  INFO 6892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T01:58:57.673+02:00  INFO 6892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T01:58:57.673+02:00  INFO 6892 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T01:58:57.745+02:00  INFO 6892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T01:58:57.746+02:00  INFO 6892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1185 ms
-2023-09-16T01:58:57.877+02:00  INFO 6892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T01:58:57.919+02:00  INFO 6892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T01:58:57.921+02:00  INFO 6892 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T01:58:58.038+02:00  INFO 6892 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:58:58.151+02:00  INFO 6892 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T01:58:58.167+02:00  INFO 6892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T01:58:58.428+02:00  INFO 6892 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25b74370
-2023-09-16T01:58:58.430+02:00  INFO 6892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T01:58:58.698+02:00  INFO 6892 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T01:58:59.324+02:00  INFO 6892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T01:58:59.327+02:00  INFO 6892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:58:59.628+02:00  INFO 6892 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T01:58:59.744+02:00  WARN 6892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T01:59:00.069+02:00  INFO 6892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-16T01:59:00.077+02:00  INFO 6892 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.004 seconds (process running for 4.533)
-2023-09-16T01:59:10.755+02:00  INFO 6892 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-16T01:59:10.756+02:00  INFO 6892 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-16T01:59:10.757+02:00  INFO 6892 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-16T01:59:20.732+02:00  INFO 6892 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T01:59:20.733+02:00  INFO 6892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T01:59:20.739+02:00  INFO 6892 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-09-16T02:00:17.039+02:00  INFO 10344 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 10344 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
-2023-09-16T02:00:17.041+02:00  INFO 10344 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
-2023-09-16T02:00:17.616+02:00  INFO 10344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-16T02:00:17.683+02:00  INFO 10344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
-2023-09-16T02:00:18.211+02:00  INFO 10344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-09-16T02:00:18.219+02:00  INFO 10344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-16T02:00:18.220+02:00  INFO 10344 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-16T02:00:18.292+02:00  INFO 10344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-16T02:00:18.292+02:00  INFO 10344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1187 ms
-2023-09-16T02:00:18.431+02:00  INFO 10344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-16T02:00:18.474+02:00  INFO 10344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-16T02:00:18.476+02:00  INFO 10344 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-09-16T02:00:18.594+02:00  INFO 10344 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T02:00:18.706+02:00  INFO 10344 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-16T02:00:18.722+02:00  INFO 10344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-09-16T02:00:18.972+02:00  INFO 10344 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e8b24a1
-2023-09-16T02:00:18.974+02:00  INFO 10344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-09-16T02:00:19.234+02:00  INFO 10344 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
-2023-09-16T02:00:19.853+02:00  INFO 10344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-16T02:00:19.857+02:00  INFO 10344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T02:00:20.140+02:00  INFO 10344 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
-2023-09-16T02:00:20.257+02:00  WARN 10344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-16T02:00:20.621+02:00  INFO 10344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-09-16T02:00:20.628+02:00  INFO 10344 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 4.036 seconds (process running for 4.564)
-2023-09-16T02:00:24.914+02:00  INFO 10344 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-16T02:00:24.915+02:00  INFO 10344 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-16T02:00:24.915+02:00  INFO 10344 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2023-09-16T02:00:39.558+02:00  INFO 10344 --- [http-nio-8080-exec-4] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 1.
-2023-09-16T02:00:39.558+02:00  WARN 10344 --- [http-nio-8080-exec-4] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 1.
-2023-09-16T02:00:39.558+02:00 ERROR 10344 --- [http-nio-8080-exec-4] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 1.
-2023-09-16T02:00:42.690+02:00  INFO 10344 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 5.
-2023-09-16T02:00:42.690+02:00  WARN 10344 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 5.
-2023-09-16T02:00:42.690+02:00 ERROR 10344 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 5.
-2023-09-16T02:00:52.126+02:00  INFO 10344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-09-16T02:00:52.128+02:00  INFO 10344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-09-16T02:00:52.134+02:00  INFO 10344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:21:29.477+02:00  INFO 11296 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 11296 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:21:29.479+02:00  INFO 11296 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:21:30.277+02:00  INFO 11296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:21:30.365+02:00  INFO 11296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:21:31.152+02:00  INFO 11296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:21:31.164+02:00  INFO 11296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:21:31.165+02:00  INFO 11296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:21:31.269+02:00  INFO 11296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:21:31.269+02:00  INFO 11296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1728 ms
+2023-09-20T00:21:31.463+02:00  INFO 11296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:21:31.535+02:00  INFO 11296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:21:31.537+02:00  INFO 11296 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:21:31.719+02:00  INFO 11296 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:21:31.887+02:00  INFO 11296 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:21:31.907+02:00  INFO 11296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:21:32.292+02:00  INFO 11296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1282f784
+2023-09-20T00:21:32.295+02:00  INFO 11296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:21:32.698+02:00  INFO 11296 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:21:33.426+02:00  INFO 11296 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:21:33.650+02:00  INFO 11296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:21:33.654+02:00  INFO 11296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:21:34.039+02:00  INFO 11296 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:21:34.219+02:00  WARN 11296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:21:34.646+02:00  INFO 11296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:21:34.655+02:00  INFO 11296 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.743 seconds (process running for 6.519)
+2023-09-20T00:21:37.325+02:00  INFO 11296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:21:37.325+02:00  INFO 11296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:21:37.326+02:00  INFO 11296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:21:37.380+02:00  INFO 11296 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:21:37.382+02:00  INFO 11296 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : info product requested with id - 1.
+2023-09-20T00:21:37.383+02:00  WARN 11296 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 1.
+2023-09-20T00:21:37.383+02:00 ERROR 11296 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : error product requested with id - 1.
+2023-09-20T00:21:37.486+02:00  INFO 11296 --- [http-nio-8080-exec-1] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 1
+2023-09-20T00:21:37.490+02:00  INFO 11296 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int) from class JpaProductService was ending with result JpaProduct{id=1, name='Banana', price=150.0}
+2023-09-20T00:21:52.437+02:00  INFO 11296 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:21:52.541+02:00  INFO 11296 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll() from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:21:58.331+02:00  INFO 11296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:21:58.334+02:00  INFO 11296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:21:58.344+02:00  INFO 11296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:24:31.603+02:00  INFO 1708 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 1708 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:24:31.606+02:00  INFO 1708 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:24:32.460+02:00  INFO 1708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:24:32.547+02:00  INFO 1708 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:24:33.339+02:00  INFO 1708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:24:33.350+02:00  INFO 1708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:24:33.350+02:00  INFO 1708 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:24:33.454+02:00  INFO 1708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:24:33.456+02:00  INFO 1708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1778 ms
+2023-09-20T00:24:33.652+02:00  INFO 1708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:24:33.723+02:00  INFO 1708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:24:33.726+02:00  INFO 1708 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:24:33.902+02:00  INFO 1708 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:24:34.073+02:00  INFO 1708 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:24:34.094+02:00  INFO 1708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:24:34.477+02:00  INFO 1708 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36238b12
+2023-09-20T00:24:34.481+02:00  INFO 1708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:24:34.874+02:00  INFO 1708 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:24:35.561+02:00  INFO 1708 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:35.754+02:00  INFO 1708 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:24:35.759+02:00  INFO 1708 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:24:36.110+02:00  INFO 1708 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:24:36.269+02:00  WARN 1708 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:24:36.645+02:00  INFO 1708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:24:36.655+02:00  INFO 1708 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.627 seconds (process running for 6.411)
+2023-09-20T00:24:39.493+02:00  INFO 1708 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:24:39.494+02:00  INFO 1708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:24:39.496+02:00  INFO 1708 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:24:39.533+02:00  INFO 1708 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:24:39.710+02:00  INFO 1708 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaProductService            : Method List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll() from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:24:51.422+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaCustomerService.getAll()
+2023-09-20T00:24:51.444+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:51.459+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:51.461+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:51.464+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:51.467+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:24:51.471+02:00  INFO 1708 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : Method List de.telran.lesson3.service_layer.jpa.JpaCustomerService.getAll() from class JpaProductService was ending with result [de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@baa1ec7, de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@106af6c1, de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@62f88773, de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@13179d0b, de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@3d2a68a3, de.telran.lesson3.domain_layer.entity.jpa.JpaCustomer@1bb8c2f3]
+2023-09-20T00:25:07.885+02:00  INFO 1708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:25:07.887+02:00  INFO 1708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:25:07.896+02:00  INFO 1708 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:25:38.355+02:00  INFO 9580 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 9580 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:25:38.357+02:00  INFO 9580 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:25:39.133+02:00  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:25:39.219+02:00  INFO 9580 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:25:39.999+02:00  INFO 9580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:25:40.011+02:00  INFO 9580 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:25:40.011+02:00  INFO 9580 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:25:40.115+02:00  INFO 9580 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:25:40.115+02:00  INFO 9580 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1699 ms
+2023-09-20T00:25:40.309+02:00  INFO 9580 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:25:40.379+02:00  INFO 9580 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:25:40.381+02:00  INFO 9580 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:25:40.556+02:00  INFO 9580 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:25:40.725+02:00  INFO 9580 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:25:40.746+02:00  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:25:41.120+02:00  INFO 9580 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d2e6f62
+2023-09-20T00:25:41.123+02:00  INFO 9580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:25:41.518+02:00  INFO 9580 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:25:42.226+02:00  INFO 9580 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:42.445+02:00  INFO 9580 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:25:42.451+02:00  INFO 9580 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:25:42.898+02:00  INFO 9580 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:25:43.114+02:00  WARN 9580 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:25:43.589+02:00  INFO 9580 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:25:43.600+02:00  INFO 9580 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.772 seconds (process running for 6.519)
+2023-09-20T00:25:48.511+02:00  INFO 9580 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:25:48.512+02:00  INFO 9580 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:25:48.513+02:00  INFO 9580 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:25:48.550+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaCustomerService           : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaCustomerService.getAll()
+2023-09-20T00:25:48.722+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:48.742+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:48.745+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:48.749+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:48.752+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:48.764+02:00  INFO 9580 --- [http-nio-8080-exec-2] d.t.l.s.jpa.JpaCustomerService           : Method List de.telran.lesson3.service_layer.jpa.JpaCustomerService.getAll() from class JpaProductService was ending with result [JpaCustomer{id=1, name='Vanya', age=30, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@64394539}, JpaCustomer{id=2, name='Petya', age=35, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@19c92694}, JpaCustomer{id=3, name='Sidor', age=40, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@485ddca5}, JpaCustomer{id=4, name='Nasty', age=45, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@183e27da}, JpaCustomer{id=5, name='Vasya', age=50, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@193f8853}, JpaCustomer{id=6, name='Nasty', age=45, email='aaa@nn.dm', cart=null}]
+2023-09-20T00:25:59.392+02:00  INFO 9580 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : Method from class JpaProductService was started - Customer de.telran.lesson3.service_layer.jpa.JpaCustomerService.getById(int)
+2023-09-20T00:25:59.393+02:00  INFO 9580 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : info customer requested with id - 1.
+2023-09-20T00:25:59.393+02:00  WARN 9580 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : warn customer requested with id - 1.
+2023-09-20T00:25:59.393+02:00 ERROR 9580 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : error customer requested with id - 1.
+2023-09-20T00:25:59.405+02:00  INFO 9580 --- [http-nio-8080-exec-3] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:25:59.407+02:00  INFO 9580 --- [http-nio-8080-exec-3] d.t.l.s.jpa.JpaCustomerService           : Method Customer de.telran.lesson3.service_layer.jpa.JpaCustomerService.getById(int) from class JpaProductService was ending with result JpaCustomer{id=1, name='Vanya', age=30, email='aaa@nn.dm', cart=de.telran.lesson3.domain_layer.entity.jpa.JpaCart@23ce59a4}
+2023-09-20T00:26:13.262+02:00  INFO 9580 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll()
+2023-09-20T00:26:13.274+02:00  INFO 9580 --- [http-nio-8080-exec-8] d.t.l.s.jpa.JpaProductService            : Method List de.telran.lesson3.service_layer.jpa.JpaProductService.getAll() from class JpaProductService was ending with result [JpaProduct{id=1, name='Banana', price=150.0}, JpaProduct{id=2, name='Apple', price=120.0}, JpaProduct{id=3, name='Orange', price=210.0}, JpaProduct{id=4, name='Peach', price=190.0}, JpaProduct{id=5, name='Lemon', price=170.0}, JpaProduct{id=7, name='Potato', price=75.0}, JpaProduct{id=9, name='Super_potato', price=100.0}, JpaProduct{id=10, name='Super_potato', price=100.0}, JpaProduct{id=14, name='A', price=-500.0}, JpaProduct{id=15, name='Banana3', price=200.0}, JpaProduct{id=16, name='Banana-miny', price=110.0}, JpaProduct{id=17, name='Banana-dry', price=55.0}, JpaProduct{id=18, name='Banana-dry2', price=55.0}]
+2023-09-20T00:26:25.264+02:00  INFO 9580 --- [http-nio-8080-exec-5] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:26:25.265+02:00  INFO 9580 --- [http-nio-8080-exec-5] d.t.l.s.jpa.JpaProductService            : info product requested with id - 1.
+2023-09-20T00:26:25.266+02:00  WARN 9580 --- [http-nio-8080-exec-5] d.t.l.s.jpa.JpaProductService            : warn product requested with id - 1.
+2023-09-20T00:26:25.266+02:00 ERROR 9580 --- [http-nio-8080-exec-5] d.t.l.s.jpa.JpaProductService            : error product requested with id - 1.
+2023-09-20T00:26:25.271+02:00  INFO 9580 --- [http-nio-8080-exec-5] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 1
+2023-09-20T00:26:25.271+02:00  INFO 9580 --- [http-nio-8080-exec-5] d.t.l.s.jpa.JpaProductService            : Method Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int) from class JpaProductService was ending with result JpaProduct{id=1, name='Banana', price=150.0}
+2023-09-20T00:26:32.375+02:00  INFO 9580 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:26:32.377+02:00  INFO 9580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:26:32.386+02:00  INFO 9580 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-20T00:26:54.995+02:00  INFO 5964 --- [main] de.telran.lesson3.Lesson3Application     : Starting Lesson3Application using Java 20.0.1 with PID 5964 (C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3\target\classes started by Admin in C:\07\Java\g-240123-m-be-lesson3-31-08-2023\lesson3)
+2023-09-20T00:26:54.998+02:00  INFO 5964 --- [main] de.telran.lesson3.Lesson3Application     : No active profile set, falling back to 1 default profile: "default"
+2023-09-20T00:26:55.815+02:00  INFO 5964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-20T00:26:55.900+02:00  INFO 5964 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2023-09-20T00:26:56.714+02:00  INFO 5964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-20T00:26:56.726+02:00  INFO 5964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-20T00:26:56.727+02:00  INFO 5964 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-20T00:26:56.844+02:00  INFO 5964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-20T00:26:56.845+02:00  INFO 5964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1781 ms
+2023-09-20T00:26:57.055+02:00  INFO 5964 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-20T00:26:57.132+02:00  INFO 5964 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-20T00:26:57.136+02:00  INFO 5964 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-20T00:26:57.335+02:00  INFO 5964 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:26:57.519+02:00  INFO 5964 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-20T00:26:57.541+02:00  INFO 5964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-20T00:26:57.932+02:00  INFO 5964 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d2e6f62
+2023-09-20T00:26:57.935+02:00  INFO 5964 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-20T00:26:58.370+02:00  INFO 5964 --- [main] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-20T00:26:59.136+02:00  INFO 5964 --- [main] d.t.l.domain_layer.entity.jpa.JpaCart    : You created JpaCart
+2023-09-20T00:26:59.357+02:00  INFO 5964 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-20T00:26:59.361+02:00  INFO 5964 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:26:59.735+02:00  INFO 5964 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-09-20T00:26:59.908+02:00  WARN 5964 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-20T00:27:00.295+02:00  INFO 5964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-20T00:27:00.304+02:00  INFO 5964 --- [main] de.telran.lesson3.Lesson3Application     : Started Lesson3Application in 5.843 seconds (process running for 6.627)
+2023-09-20T00:27:03.235+02:00  INFO 5964 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-20T00:27:03.236+02:00  INFO 5964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-20T00:27:03.237+02:00  INFO 5964 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-20T00:27:03.289+02:00  INFO 5964 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method from class JpaProductService was started - Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int)
+2023-09-20T00:27:03.390+02:00  INFO 5964 --- [http-nio-8080-exec-1] d.t.lesson3.logging_layer.AspectLogging  : Метод getById класса JpaProductService успешно вернул продукт с идентификатором 1
+2023-09-20T00:27:03.393+02:00  INFO 5964 --- [http-nio-8080-exec-1] d.t.l.s.jpa.JpaProductService            : Method Product de.telran.lesson3.service_layer.jpa.JpaProductService.getById(int) from class JpaProductService was ending with result JpaProduct{id=1, name='Banana', price=150.0}
+2023-09-20T00:27:17.944+02:00  INFO 5964 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-20T00:27:17.947+02:00  INFO 5964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-20T00:27:17.955+02:00  INFO 5964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
